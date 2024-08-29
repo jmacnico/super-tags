@@ -21,8 +21,7 @@ export class SignIn implements IUseCase<SignInParams, SignInResult> {
     async Execute(params: SignInParams): Promise<SignInResult> {
         const user = await this.getUserByEmailRepository.GetByEmail(params.username)
         if (user) {
-			console.log(user.passwordHash, params.password)
-			const isPasswordValid = await this.hashCompare.Compare(user.passwordHash, params.password)
+            const isPasswordValid = await this.hashCompare.Compare(user.passwordHash, params.password)
             if (isPasswordValid) {
                 const token = await this.encrypter.Encrypt({
                     id: user.id!,
