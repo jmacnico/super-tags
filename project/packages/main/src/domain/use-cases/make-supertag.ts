@@ -1,6 +1,7 @@
-import { CreateSuperTag } from "@repo/domain";
+import { CreateSuperTag } from "@repo-super-tags/data";
+import { ICreateSuperTag } from "@repo-super-tags/domain";
 import { MakeSuperTagRepository } from "../../infra/db/make-supertag-repository";
 
-export function MakeSuperTag(): CreateSuperTag {
+export function MakeSuperTag(): ICreateSuperTag {
   return new CreateSuperTag(MakeSuperTagRepository());
 }

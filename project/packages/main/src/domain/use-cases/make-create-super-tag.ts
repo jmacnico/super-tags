@@ -1,7 +1,8 @@
-import { CreateSuperTag, CreateSuperTagParams, CreateSuperTagResult, IUseCase } from "@repo/domain";
+import { ICreateSuperTag } from "@repo-super-tags/domain";
+import { CreateSuperTag } from "@repo-super-tags/data";
 import { makeSuperTagRepository } from "../../infra/db/maker-super-tag-repository";
 
-export function MakeCreateSuperTag(): IUseCase<CreateSuperTagParams, CreateSuperTagResult> {
+export function MakeCreateSuperTag(): ICreateSuperTag {
     return new CreateSuperTag(makeSuperTagRepository())
 
 }

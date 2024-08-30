@@ -1,5 +1,5 @@
-import { BcryptAdapter } from "@repo/infra-cryptography";
-import { IHashComparer, IHasher } from "@repo/domain";
+import { BcryptAdapter } from "@repo-shared/infra-cryptography";
+import { IHashComparer, IHasher } from "@repo-shared/data";
 
 function makeBcrypt(): BcryptAdapter {
     return new BcryptAdapter(12)

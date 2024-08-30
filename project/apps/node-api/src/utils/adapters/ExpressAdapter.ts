@@ -1,9 +1,9 @@
 import { Request as RequestExpress, Response as ResponseExpress } from 'express';
-import { IApiAdapter, IApiController } from "@repo/presentation-api";
+import { IHttpAdapter, IHttpController } from "@repo-shared/presentation-http";
 
 
-export class ExpressAdapter<B> implements IApiAdapter<RequestExpress, ResponseExpress> {
-	constructor(private readonly handler: IApiController<B>) {
+export class ExpressAdapter<B> implements IHttpAdapter<RequestExpress, ResponseExpress> {
+	constructor(private readonly handler: IHttpController<B>) {
 
 	}
 	async Execute(req: RequestExpress, res: ResponseExpress): Promise<ResponseExpress> {

@@ -1,24 +1,37 @@
 {
-  "name": "project",
-  "private": true,
-  "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
-  },
-  "devDependencies": {
-    "prettier": "^3.2.5",
-    "turbo": "^2.0.5",
-    "typescript": "^5.4.5"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "npm@10.1.0",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "dependencies": {}
+    "name": "project",
+    "private": true,
+    "scripts": {
+        "build": "turbo build",
+        "dev": "turbo dev",
+        "lint": "turbo lint",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    },
+    "devDependencies": {
+        "prettier": "^3.2.5",
+        "turbo": "^2.0.5",
+        "typescript": "^5.4.5"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "packageManager": "npm@10.1.0",
+    "workspaces": [
+        "apps/*",
+        "packages/*",
+        "packages/shared/*",
+        "packages/shared/infra/*",
+        
+        "packages/user-management/*",
+        "packages/user-management/presentation/*",
+        "packages/user-management/infra/*",
+        
+        "packages/super-tags/*",
+        "packages/super-tags/presentation/*",
+        "packages/super-tags/infra/*",
+        
+        "packages/databases/*",
+        "packages/configs/*"
+    ],
+    "dependencies": {}
 }

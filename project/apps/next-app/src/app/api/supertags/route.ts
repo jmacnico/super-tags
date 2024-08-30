@@ -1,4 +1,4 @@
-import { ValidationError } from "@repo/domain";
+import { ValidationError } from "@repo-shared/domain";
 import { MakeSuperTag, MakeSuperTagRepository } from "@repo/main";
 import { HttpResponse } from "../utils/HttpResponse";
 

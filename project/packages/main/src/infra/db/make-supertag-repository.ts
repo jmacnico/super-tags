@@ -1,5 +1,5 @@
-import { ISuperTagRepository } from "@repo/domain/src/services";
-import { SuperTagRepositoryPostgres } from "@repo/infra-db";
+import { ISuperTagRepository } from "@repo-super-tags/data";
+import { SuperTagRepositoryPostgres } from "@repo-super-tags/infra";
 
 function MakeSuperTagRepositoryPostgres(): SuperTagRepositoryPostgres {
   return new SuperTagRepositoryPostgres();

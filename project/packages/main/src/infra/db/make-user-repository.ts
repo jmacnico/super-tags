@@ -1,5 +1,5 @@
-import { IAddUserRepository, IGetUserByEmailRepository, IUserRepository } from "@repo/domain";
-import { UserRepositoryInMemory, UserRepositoryPostgres, UserRepositorySQLite } from "@repo/infra-db";
+import { IAddUserRepository, IGetUserByEmailRepository, IUserRepository } from "@repo-user-management/data";
+import { UserRepositoryInMemory, UserRepositoryPostgres, UserRepositorySQLite } from "@repo-user-management/infra-db";
 
 function MakeUserRepositoryInMemory(): UserRepositoryInMemory {
 	return new UserRepositoryInMemory()

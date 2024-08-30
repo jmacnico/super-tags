@@ -1,4 +1,4 @@
-import { Email, PasswordStrong } from '@repo/domain';
+import { Email, PasswordStrong } from '@repo-shared/domain';
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
 import { useContext, useState } from 'react';
 import { GetErrorDescription } from '../../../configurations/descriptionsErrors';

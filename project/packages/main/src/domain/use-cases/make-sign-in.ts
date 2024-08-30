@@ -1,8 +1,9 @@
 import { MakeGetUserByEmailRepository } from "../../infra/db/make-user-repository";
 import { MakeHashComparer } from "../../infra/cryptography/make-hash";
-import { IUseCase, SignIn, SignInParams, SignInResult } from "@repo/domain";
+import { ISignInUseCase } from "@repo-user-management/domain";
+import { SignIn } from "@repo-user-management/data";
 import { MakeEncrypter } from "../../infra/cryptography/make-encrypter";
 
-export function MakeSignIn(): IUseCase<SignInParams, SignInResult> {
+export function MakeSignIn(): ISignInUseCase {
 	return new SignIn(MakeGetUserByEmailRepository(), MakeHashComparer(), MakeEncrypter())
 }

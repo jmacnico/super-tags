@@ -1,0 +1,1 @@
+export { PrismaClient as PrismaClientSQLite } from "./client-generated";

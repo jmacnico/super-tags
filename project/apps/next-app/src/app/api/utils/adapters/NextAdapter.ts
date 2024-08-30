@@ -1,8 +1,8 @@
-import { IApiAdapter, IApiController } from "@repo/presentation-api";
+import { IHttpAdapter, IHttpController } from "@repo-shared/presentation-http";
 
 
-export class NextAdapter<B> implements IApiAdapter<Request, Response> {
-	constructor(private readonly handler: IApiController<B>) {
+export class NextAdapter<B> implements IHttpAdapter<Request, Response> {
+	constructor(private readonly handler: IHttpController<B>) {
 
 	}
 	async Execute(req: Request, res?: Response): Promise<Response> {

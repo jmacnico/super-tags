@@ -1,0 +1,16 @@
+{
+    "name": "@repo-shared/presentation-http",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.ts",
+    "directories": {
+        "test": "test"
+    },
+    "keywords": [],
+    "author": "José Micael Almeida Costa",
+    "license": "ISC",
+    "devDependencies": {
+        "@repo/eslint-config": "*",
+        "@repo/typescript-config": "*"
+    }
+}

@@ -14,7 +14,7 @@
 	},
 	"dependencies": {
 		"@heroicons/react": "^2.1.5",
-		"@repo/domain": "*",
+		"@repo-shared/domain": "*",
 		"@repo/main": "*",
 		"@tiptap/extension-bubble-menu": "^2.4.0",
 		"@tiptap/extension-link": "^2.4.0",

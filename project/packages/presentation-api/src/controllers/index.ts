@@ -1,6 +1,0 @@
-export * from './AuthorizationController'
-export * from './SuperTag/CreateSuperTagController'
-export * from './SuperTag/GetAllSuperTagController'
-export * from './UserManagment/SignInController'
-export * from './UserManagment/UserRegisterController'
-export * from './UserManagment/UserGetAllController'

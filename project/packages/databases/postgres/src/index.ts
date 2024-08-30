@@ -1,0 +1,1 @@
+export {PrismaClient as PrismaClientPostgres} from './client-generated'

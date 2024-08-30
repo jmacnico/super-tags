@@ -12,9 +12,18 @@
         "@repo/typescript-config": "*"
     },
     "dependencies": {
-        "@repo/domain": "*",
-        "@repo/infra-db": "*",
-        "@repo/infra-cryptography": "*",
-        "@repo/presentation-api": "*"
+        "@repo-shared/domain": "*",
+        "@repo-user-management/domain": "*",
+        "@repo-user-management/data": "*",
+        "@repo-user-management/infra-db": "*",
+        "@repo-user-management/presentation-http":"*",
+        
+        "@repo-super-tags/domain": "*",
+        "@repo-super-tags/data": "*",
+        "@repo-super-tags/infra-db": "*",
+        "@repo-super-tags/presentation-http": "*",
+        
+        "@repo-shared/infra-cryptography": "*",
+        "@repo-shared/presentation-http": "*"
     }
 }

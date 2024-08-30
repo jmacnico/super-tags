@@ -10,11 +10,8 @@
         "test:ci": "npm test -- --coverage"
     },
     "dependencies": {
-        "@repo/domain": "*",
-        "@repo/main": "*",
-        "@repo/presentation-api": "*",
-        "cors": "^2.8.5",
-        "express": "^4.19.2"
+        "@repo-shared/presentation-http": "*",
+        "@repo/main":"*"
     },
     "devDependencies": {
         "@faker-js/faker": "^8.4.1",
