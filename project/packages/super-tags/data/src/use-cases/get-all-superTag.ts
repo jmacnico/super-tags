@@ -1,12 +1,8 @@
-import { SuperTag } from "@repo-super-tags/domain";
+import { SuperTag, IGetAllSuperTag, GetAllSuperTagParams } from "@repo-super-tags/domain";
 import { ISuperTagRepository } from "../services";
-import { IUseCase } from "@repo-shared/domain";
 
-export type GetAllSuperTagParams = {
-	userId: number
-}
 
-export class GetAllSuperTag implements IUseCase<GetAllSuperTagParams, SuperTag[]> {
+export class GetAllSuperTag implements IGetAllSuperTag {
 	constructor(private readonly superTagRepository: ISuperTagRepository) { }
 
 	async Execute(params: GetAllSuperTagParams): Promise<SuperTag[]> {

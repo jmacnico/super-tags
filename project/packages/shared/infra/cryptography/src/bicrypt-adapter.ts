@@ -1,7 +1,7 @@
-import { IHashComparer, IHasher } from '@repo-shared/data'
+import { IHasher } from '@repo-shared/data'
 import bcrypt from 'bcrypt'
 
-export class BcryptAdapter implements IHasher, IHashComparer {
+export class BcryptAdapter implements IHasher {
     constructor(private readonly salt: number) { }
     Compare(hasedValue: string, valueTocompare: string): Promise<boolean> {
         return bcrypt.compare(valueTocompare, hasedValue)

@@ -1,6 +1,6 @@
 import { UserTokenInformation } from "@repo-user-management/domain"
 import { IUserRepository } from "@repo-user-management/data"
-import { IDecrypter } from "@repo-shared/data"
+import { IEncrypter } from "@repo-shared/data"
 import { IHttpController, HttpResponse, HttpRequest, HttpResponseUtils } from "@repo-shared/presentation-http"
 
 
@@ -9,7 +9,7 @@ export class AuthorizationController<B> implements IHttpController<B> {
     constructor(
         private readonly next: IHttpController<B>,
         private readonly userRepository: IUserRepository,
-        private readonly jwtDecoder: IDecrypter<UserTokenInformation>,
+        private readonly jwtDecoder: IEncrypter<UserTokenInformation>,
 
     ) {  }
 

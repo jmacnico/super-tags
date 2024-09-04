@@ -2,7 +2,7 @@ import { User } from "@repo-user-management/domain"
 import { IAddUserRepository, IGetUserByEmailRepository, IUserRepository } from "@repo-user-management/data"
 import { PrismaClientPostgres } from "@repo-database/postgres";
 
-export class UserRepositoryPostgres implements IUserRepository, IAddUserRepository, IGetUserByEmailRepository {
+export class UserRepositoryPostgres implements IUserRepository {
 	_db: PrismaClientPostgres
 	constructor(connectionString: string) {
 		this._db = new PrismaClientPostgres({
